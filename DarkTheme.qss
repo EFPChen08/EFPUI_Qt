@@ -1,0 +1,300 @@
+QWidget {
+    background-color: #121212;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+QMainWindow, QDialog, QWidget#centralWidget {
+    background-color: #121212;
+    border: none;
+}
+
+QPushButton {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    border: 1px solid #383838;
+    border-radius: 8px;
+    padding: 6px 12px;
+}
+QPushButton:hover {
+    background-color: #333333;
+}
+QPushButton:pressed {
+    background-color: #2D2D2D;
+}
+QPushButton:disabled {
+    background-color: #1E1E1E;
+    color: #666666;
+    border-color: #2D2D2D;
+}
+
+QPushButton#PrimaryButton {
+    background-color: #0064FF;
+    border-color: #0064FF;
+    color: white;
+}
+QPushButton#PrimaryButton:hover {
+    background-color: #42A5F5;
+}
+
+QLineEdit, QTextEdit, QPlainTextEdit {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    border: 1px solid #383838;
+    border-radius: 8px;
+    padding: 6px;
+    selection-background-color: #0064FF;
+    selection-color: white;
+}
+
+QLineEdit:focus, QTextEdit:focus, QPlainTextEdit:focus {
+    border-color: #0064FF;
+}
+
+QLineEdit:placeholder-text, QTextEdit:placeholder-text {
+    color: #BBBBBB;
+}
+
+QScrollBar:vertical {
+    width: 8px;
+    background-color: transparent;
+    margin: 0;
+}
+QScrollBar::handle:vertical {
+    background-color: #383838;
+    border-radius: 4px;
+}
+QScrollBar::handle:vertical:hover {
+    background-color: #555555;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    background-color: transparent;
+    border: none;
+}
+
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+    background-color: transparent;
+    border: none;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background-color: transparent;
+}
+
+QRadioButton {
+    color: #FFFFFF;
+    spacing: 8px;
+    padding: 4px;
+}
+QRadioButton::indicator {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #383838;
+    border-radius: 6.99999px;
+    background-color: #1E1E1E;
+    margin: 2px;
+}
+QRadioButton::indicator:checked {
+    background-color: #0064FF;
+    border-color: #0064FF;
+    image: url(:/checkr.png);
+}
+QRadioButton::indicator:unchecked {
+    background-color: #1E1E1E;
+}
+
+QCheckBox {
+    color: #FFFFFF;
+    spacing: 8px;
+    padding: 4px;
+}
+QCheckBox::indicator {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #383838;
+    border-radius: 4px;
+    background-color: #1E1E1E;
+    margin: 2px;
+}
+QCheckBox::indicator:checked {
+    background-color: #0064FF;
+    border-color: #0064FF;
+    image: url(:/checkmark.png);
+}
+QCheckBox::indicator:unchecked {
+    background-color: #1E1E1E;
+}
+
+QComboBox {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    border: 1px solid #383838;
+    border-radius: 8px;
+    padding: 6px;
+    min-width: 100px;
+}
+QComboBox::drop-down {
+    border: none;
+    padding-right: 6px;
+}
+QComboBox::down-arrow {
+    width: 12px;
+    height: 12px;
+}
+QComboBox QAbstractItemView {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    border: 1px solid #383838;
+    border-radius: 8px;
+    padding: 4px;
+    selection-background-color: #0064FF;
+}
+
+QSlider::groove:horizontal {
+    height: 6px;
+    background-color: #383838;
+    border-radius: 3px;
+}
+QSlider::handle:horizontal {
+    width: 20px;
+    height: 20px;
+    margin: -7px 0;
+    background-color: #0064FF;
+    border-radius: 10px;
+    border: 1px solid #1E1E1E;
+}
+
+QProgressBar {
+    background-color: #1E1E1E;
+    border: 1px solid #383838;
+    border-radius: 8px;
+    text-align: center;
+    height: 8px;
+}
+QProgressBar::chunk {
+    background-color: #0064FF;
+    border-radius: 6px;
+}
+
+QTabWidget::pane {
+    border: 1px solid #383838;
+    border-radius: 8px;
+    background-color: #1E1E1E;
+    margin-top: 4px;
+}
+QTabBar::tab {
+    background-color: #1E1E1E;
+    color: #BBBBBB;
+    border: 1px solid #383838;
+    border-bottom-color: transparent;
+    border-radius: 8px 8px 0 0;
+    padding: 6px 16px;
+    margin-right: 2px;
+}
+QTabBar::tab:selected {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    border-color: #383838;
+    border-bottom-color: #1E1E1E;
+}
+
+QGroupBox {
+    background-color: #121212;
+    color: #FFFFFF;
+    border: 1px solid #383838;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 6px;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    left: 10px;
+    padding: 0 4px;
+    background-color: #121212;
+}
+
+QMenuBar {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    border-bottom: 1px solid #383838;
+    font-size: 12px;
+}
+
+QMenuBar::item {
+    padding: 4px 12px;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+QMenuBar::item:hover {
+    background-color: #333333;
+    color: #0064FF;
+}
+
+QMenuBar::item:selected {
+    background-color: #0064FF;
+    color: white;
+}
+
+QMenu {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    border: 1px solid #383838;
+    border-radius: 8px;
+}
+
+QMenu::item {
+    padding: 6px 24px;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+QMenu::item:hover {
+    background-color: #333333;
+    color: #0064FF;
+}
+
+QMenu::item:selected {
+    background-color: #0064FF;
+    color: white;
+}
+
+QMenu::separator {
+    height: 1px;
+    background-color: #383838;
+    margin: 4px 0;
+}
+
+QScrollBar:vertical {
+    width: 8px;
+    background-color: transparent;
+    margin: 0;
+}
+QScrollBar::handle:vertical {
+    background-color: #383838;
+    border-radius: 4px;
+}
+QScrollBar::handle:vertical:hover {
+    background-color: #555555;
+}
+
+QListWidget, QTreeWidget, QTableWidget {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    border: 1px solid #383838;
+    border-radius: 8px;
+    padding: 4px;
+}
+QListWidget::item-selected, QTreeWidget::item-selected, QTableWidget::item-selected {
+    background-color: #0064FF;
+    color: white;
+}
+
+QStatusBar {
+    background-color: #1E1E1E;
+    color: #BBBBBB;
+    border-top: 1px solid #383838;
+    padding: 4px;
+}

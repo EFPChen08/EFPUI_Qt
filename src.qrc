@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>DarkTheme.qss</file>
+        <file>checkmark.png</file>
+        <file>checkr.png</file>
+    </qresource>
+</RCC>
